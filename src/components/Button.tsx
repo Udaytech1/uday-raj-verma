@@ -20,6 +20,7 @@ export function Button({ children, variant = 'primary', href, target, rel, class
     transition: 'all var(--transition-fast)',
     cursor: 'pointer',
     border: 'none',
+    gap: '0.5rem',
   };
 
   const variants = {

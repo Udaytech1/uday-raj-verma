@@ -129,11 +129,25 @@ a:hover {
 }
 
 .section {
-  padding: var(--spacing-2xl) 0;
+  padding: var(--spacing-lg) 0;
 }
 
 @media (max-width: 768px) {
   .section {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-md) 0;
+  }
+}
+
+/* Navigation */
+.mobile-menu-icon {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none !important;
+  }
+  .mobile-menu-icon {
+    display: block !important;
   }
 }

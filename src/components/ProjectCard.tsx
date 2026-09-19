@@ -10,7 +10,11 @@ interface ProjectCardProps {
   technologies: string[];
   platform: string;
   impact?: string;
+  icon?: string;
   link?: string;
+  playStoreLink?: string;
+  appStoreLink?: string;
+  websiteLink?: string;
 }
 
 export function ProjectCard({ 
@@ -21,8 +25,27 @@ export function ProjectCard({
   technologies, 
   platform,
   impact,
-  link 
+  icon,
+  link,
+  playStoreLink,
+  appStoreLink,
+  websiteLink
 }: ProjectCardProps) {
+  const linkStyle = {
+    color: 'var(--primary)',
+    fontSize: '0.875rem',
+    fontWeight: 600,
+    textDecoration: 'none',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '0.375rem',
+    padding: '0.375rem 0.75rem',
+    backgroundColor: 'rgba(37, 99, 235, 0.08)',
+    border: '1px solid rgba(37, 99, 235, 0.2)',
+    borderRadius: 'var(--radius-xl)',
+    transition: 'all var(--transition-fast)'
+  };
+
   return (
     <div style={{
       display: 'flex',
@@ -44,24 +67,33 @@ export function ProjectCard({
     }}>
       <div style={{ padding: 'var(--spacing-lg)', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 'var(--spacing-md)' }}>
-          <div>
-            <span style={{ 
-              color: 'var(--muted)', 
-              fontSize: '0.875rem', 
-              fontWeight: 500,
-              textTransform: 'uppercase',
-              letterSpacing: '0.05em'
-            }}>
-              {category}
-            </span>
-            <h3 style={{ 
-              fontSize: '1.5rem', 
-              fontWeight: 'bold', 
-              marginTop: '0.25rem',
-              marginBottom: '0.5rem'
-            }}>
-              {title}
-            </h3>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            {icon && (
+              <img 
+                src={icon} 
+                alt={`${title} icon`} 
+                style={{ width: '48px', height: '48px', borderRadius: 'var(--radius-md)', objectFit: 'cover' }} 
+              />
+            )}
+            <div>
+              <span style={{ 
+                color: 'var(--muted)', 
+                fontSize: '0.875rem', 
+                fontWeight: 500,
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em'
+              }}>
+                {category}
+              </span>
+              <h3 style={{ 
+                fontSize: '1.5rem', 
+                fontWeight: 'bold', 
+                marginTop: '0.25rem',
+                marginBottom: '0.5rem'
+              }}>
+                {title}
+              </h3>
+            </div>
           </div>
           {impact && (
             <span style={{
@@ -111,30 +143,56 @@ export function ProjectCard({
               <TechBadge key={tech} tech={tech} />
             ))}
           </div>
-          {link && (
-            <a 
-              href={link} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              style={{
-                color: 'var(--foreground)',
-                fontSize: '0.875rem',
-                fontWeight: 600,
-                textDecoration: 'none',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.25rem',
-                padding: '0.25rem 0.5rem',
-                backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                borderRadius: 'var(--radius-sm)',
-                transition: 'background-color var(--transition-normal)'
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.05)'}
-            >
-              View Project <span>→</span>
-            </a>
-          )}
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+            {link && (
+              <a 
+                href={link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={linkStyle}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = 'var(--primary-foreground)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(37, 99, 235, 0.08)'; e.currentTarget.style.color = 'var(--primary)'; }}
+              >
+                View Project <span>→</span>
+              </a>
+            )}
+            {playStoreLink && (
+              <a 
+                href={playStoreLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={linkStyle}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = 'var(--primary-foreground)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(37, 99, 235, 0.08)'; e.currentTarget.style.color = 'var(--primary)'; }}
+              >
+                Play Store <span>→</span>
+              </a>
+            )}
+            {appStoreLink && (
+              <a 
+                href={appStoreLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={linkStyle}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = 'var(--primary-foreground)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(37, 99, 235, 0.08)'; e.currentTarget.style.color = 'var(--primary)'; }}
+              >
+                App Store <span>→</span>
+              </a>
+            )}
+            {websiteLink && (
+              <a 
+                href={websiteLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={linkStyle}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = 'var(--primary-foreground)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(37, 99, 235, 0.08)'; e.currentTarget.style.color = 'var(--primary)'; }}
+              >
+                Website <span>→</span>
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>
