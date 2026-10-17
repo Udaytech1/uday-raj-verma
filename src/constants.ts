@@ -1,4 +1,4 @@
-export const CV_URL = "/cv/Uday_Raj_Verma_5year_React_Native_Android.pdf";
+export const CV_URL = "/cv/Uday-Raj-Verma.pdf";
 
 // Contact & Social
 export const EMAIL = "urajpatel12@gmail.com";
