@@ -339,7 +339,6 @@ export function ContactSection() {
                   {PHONE_NUMBER}
                 </div>
                 <div style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>
-                  Mon – Fri · 9:00 AM – 7:00 PM IST
                 </div>
               </div>
 
