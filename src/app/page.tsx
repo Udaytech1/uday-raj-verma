@@ -97,7 +97,7 @@ export default function Home() {
               width: '42px',
               height: '42px',
               borderRadius: '12px',
-              backgroundColor: 'rgba(37, 99, 235, 0.1)',
+              backgroundColor: 'rgba(139, 92, 246, 0.15)',
               color: 'var(--primary)'
             }}>
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -124,7 +124,7 @@ export default function Home() {
                 left: '1.5rem',
                 right: '1.5rem',
                 height: '3px',
-                background: 'linear-gradient(90deg, #2563EB, #0D9488)',
+                background: 'linear-gradient(90deg, #8B5CF6, #EC4899)',
                 borderTopLeftRadius: '2px',
                 borderTopRightRadius: '2px'
               }} />
@@ -137,9 +137,9 @@ export default function Home() {
                     height: '52px',
                     borderRadius: '12px',
                     padding: '4px',
-                    backgroundColor: '#FFFFFF',
-                    border: '1px solid var(--card-border)',
-                    boxShadow: '0 2px 6px rgba(0,0,0,0.04)',
+                    backgroundColor: '#1E183B',
+                    border: '1px solid rgba(139, 92, 246, 0.25)',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -163,7 +163,7 @@ export default function Home() {
                         style={{ 
                           fontSize: '1rem', 
                           fontWeight: 600, 
-                          color: 'var(--primary)', 
+                          color: '#C4B5FD', 
                           display: 'inline-flex', 
                           alignItems: 'center', 
                           gap: '0.25rem',
@@ -187,23 +187,24 @@ export default function Home() {
                     alignItems: 'center',
                     gap: '0.4rem',
                     padding: '0.25rem 0.65rem',
-                    backgroundColor: 'rgba(16, 185, 129, 0.1)',
-                    border: '1px solid rgba(16, 185, 129, 0.25)',
+                    backgroundColor: 'rgba(16, 185, 129, 0.15)',
+                    border: '1px solid rgba(16, 185, 129, 0.3)',
                     borderRadius: '9999px',
                     fontSize: '0.75rem',
                     fontWeight: 600,
-                    color: '#059669'
+                    color: '#10B981'
                   }}>
                     <span className="pulse-dot" />
                     Current Role
                   </span>
                   <span style={{
                     padding: '0.25rem 0.65rem',
-                    backgroundColor: 'rgba(37, 99, 235, 0.08)',
+                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                    border: '1px solid rgba(139, 92, 246, 0.3)',
                     borderRadius: '9999px',
                     fontSize: '0.75rem',
                     fontWeight: 600,
-                    color: 'var(--primary)'
+                    color: '#C4B5FD'
                   }}>
                     Full-time
                   </span>
@@ -249,13 +250,13 @@ export default function Home() {
                 gap: '0.75rem',
                 marginBottom: '1.25rem'
               }}>
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#374151' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(37, 99, 235, 0.1)',
-                    color: 'var(--primary)',
+                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                    color: '#A78BFA',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -271,13 +272,13 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#374151' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(13, 148, 136, 0.1)',
-                    color: 'var(--secondary)',
+                    backgroundColor: 'rgba(236, 72, 153, 0.15)',
+                    color: '#F472B6',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -293,13 +294,13 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#374151' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(37, 99, 235, 0.1)',
-                    color: 'var(--primary)',
+                    backgroundColor: 'rgba(6, 182, 212, 0.15)',
+                    color: '#22D3EE',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -315,13 +316,13 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#374151' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(37, 99, 235, 0.1)',
-                    color: 'var(--primary)',
+                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                    color: '#A78BFA',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -357,9 +358,9 @@ export default function Home() {
                     height: '52px',
                     borderRadius: '12px',
                     padding: '4px',
-                    backgroundColor: '#FFFFFF',
-                    border: '1px solid var(--card-border)',
-                    boxShadow: '0 2px 6px rgba(0,0,0,0.04)',
+                    backgroundColor: '#1E183B',
+                    border: '1px solid rgba(139, 92, 246, 0.25)',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -383,7 +384,7 @@ export default function Home() {
                         style={{ 
                           fontSize: '1rem', 
                           fontWeight: 600, 
-                          color: 'var(--primary)', 
+                          color: '#C4B5FD', 
                           display: 'inline-flex', 
                           alignItems: 'center', 
                           gap: '0.25rem',
@@ -404,7 +405,8 @@ export default function Home() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
                   <span style={{
                     padding: '0.25rem 0.65rem',
-                    backgroundColor: 'rgba(0, 0, 0, 0.05)',
+                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                    border: '1px solid var(--card-border)',
                     borderRadius: '9999px',
                     fontSize: '0.75rem',
                     fontWeight: 600,
@@ -454,13 +456,13 @@ export default function Home() {
                 gap: '0.75rem',
                 marginBottom: '1.25rem'
               }}>
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#374151' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(37, 99, 235, 0.1)',
-                    color: 'var(--primary)',
+                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                    color: '#A78BFA',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -476,13 +478,13 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#374151' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(37, 99, 235, 0.1)',
-                    color: 'var(--primary)',
+                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                    color: '#A78BFA',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -498,13 +500,13 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#374151' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(37, 99, 235, 0.1)',
-                    color: 'var(--primary)',
+                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                    color: '#A78BFA',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -541,11 +543,11 @@ export default function Home() {
               gap: '0.45rem',
               padding: '0.3rem 0.75rem',
               borderRadius: '9999px',
-              backgroundColor: 'rgba(37, 99, 235, 0.08)',
-              border: '1px solid rgba(37, 99, 235, 0.2)',
+              backgroundColor: 'rgba(139, 92, 246, 0.12)',
+              border: '1px solid rgba(139, 92, 246, 0.3)',
               fontSize: '0.75rem',
               fontWeight: 600,
-              color: 'var(--primary)',
+              color: '#C4B5FD',
               textTransform: 'uppercase',
               letterSpacing: '0.05em',
               marginBottom: '1rem'
@@ -572,22 +574,22 @@ export default function Home() {
               margin: '1.25rem 0'
             }}>
               <div className="recruiter-stat-box">
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--primary)', lineHeight: 1 }}>5+</div>
+                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#A78BFA', lineHeight: 1 }}>5+</div>
                 <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>Years Mobile Dev</div>
               </div>
 
               <div className="recruiter-stat-box">
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--secondary)', lineHeight: 1 }}>500K+</div>
+                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#F472B6', lineHeight: 1 }}>500K+</div>
                 <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>Total App Installs</div>
               </div>
 
               <div className="recruiter-stat-box">
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#8B5CF6', lineHeight: 1 }}>10+</div>
+                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#C084FC', lineHeight: 1 }}>10+</div>
                 <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>Production Apps</div>
               </div>
 
               <div className="recruiter-stat-box">
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#F59E0B', lineHeight: 1 }}>Global</div>
+                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#22D3EE', lineHeight: 1 }}>Global</div>
                 <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>UAE On-Site Delivery</div>
               </div>
             </div>
@@ -598,7 +600,7 @@ export default function Home() {
               flexDirection: 'column',
               gap: '0.7rem',
               padding: '1rem',
-              backgroundColor: 'rgba(255, 255, 255, 0.75)',
+              backgroundColor: 'rgba(255, 255, 255, 0.03)',
               border: '1px solid var(--card-border)',
               borderRadius: 'var(--radius-md)',
               marginBottom: '1.25rem'
@@ -640,7 +642,7 @@ export default function Home() {
                   fontWeight: 600,
                   fontSize: '0.9375rem',
                   textDecoration: 'none',
-                  boxShadow: '0 4px 12px rgba(37, 99, 235, 0.25)',
+                  boxShadow: '0 4px 14px rgba(139, 92, 246, 0.35)',
                   transition: 'transform var(--transition-fast), box-shadow var(--transition-fast)'
                 }}
                 className="hover-lift"
@@ -662,8 +664,8 @@ export default function Home() {
                     justifyContent: 'center',
                     gap: '0.4rem',
                     padding: '0.625rem 0.75rem',
-                    backgroundColor: '#FFFFFF',
-                    border: '1px solid var(--card-border)',
+                    backgroundColor: '#1A1535',
+                    border: '1px solid rgba(139, 92, 246, 0.25)',
                     borderRadius: 'var(--radius-md)',
                     color: 'var(--foreground)',
                     fontWeight: 500,
@@ -690,8 +692,8 @@ export default function Home() {
                     justifyContent: 'center',
                     gap: '0.4rem',
                     padding: '0.625rem 0.75rem',
-                    backgroundColor: '#FFFFFF',
-                    border: '1px solid var(--card-border)',
+                    backgroundColor: '#1A1535',
+                    border: '1px solid rgba(139, 92, 246, 0.25)',
                     borderRadius: 'var(--radius-md)',
                     color: 'var(--foreground)',
                     fontWeight: 500,
@@ -754,7 +756,7 @@ export default function Home() {
               width: '42px',
               height: '42px',
               borderRadius: '12px',
-              backgroundColor: 'rgba(37, 99, 235, 0.1)',
+              backgroundColor: 'rgba(139, 92, 246, 0.15)',
               color: 'var(--primary)'
             }}>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -781,8 +783,8 @@ export default function Home() {
                   <path d="M12 18h.01" />
                 </svg>
               ),
-              iconBg: "rgba(37, 99, 235, 0.1)",
-              iconColor: "#2563EB",
+              iconBg: "rgba(139, 92, 246, 0.15)",
+              iconColor: "#A78BFA",
               skills: ["React Native", "Android", "Kotlin", "Java", "TypeScript", "JavaScript", "Jetpack Compose", "Unity"]
             },
             {
@@ -794,8 +796,8 @@ export default function Home() {
                   <polyline points="2 12 12 17 22 12" />
                 </svg>
               ),
-              iconBg: "rgba(99, 102, 241, 0.1)",
-              iconColor: "#6366F1",
+              iconBg: "rgba(99, 102, 241, 0.15)",
+              iconColor: "#818CF8",
               skills: ["MVVM", "Room DB", "Hilt", "Coroutines & Flow", "WorkManager", "LiveData", "Navigation Component", "SQLite", "Data Binding"]
             },
             {
@@ -805,8 +807,8 @@ export default function Home() {
                   <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
                 </svg>
               ),
-              iconBg: "rgba(13, 148, 136, 0.1)",
-              iconColor: "#0D9488",
+              iconBg: "rgba(236, 72, 153, 0.15)",
+              iconColor: "#F472B6",
               skills: ["Firebase Services", "AI & GPT Streaming", "REST APIs", "WebSockets", "Push Notifications (FCM)", "Redux Toolkit", "Video Calling", "Intercom", "Node.js"]
             },
             {
@@ -819,8 +821,8 @@ export default function Home() {
                   <path d="M18 3a3 3 0 0 0-3 3v.5L6 15.5l2.5 2.5L17.5 9H18a3 3 0 0 0 3-3V3h-3Z" />
                 </svg>
               ),
-              iconBg: "rgba(245, 158, 11, 0.1)",
-              iconColor: "#F59E0B",
+              iconBg: "rgba(245, 158, 11, 0.15)",
+              iconColor: "#FBBF24",
               skills: ["Google Play Store", "Apple App Store", "Huawei AppGallery", "Android Studio", "Xcode", "Git", "GitHub", "Postman", "VS Code"]
             },
             {
@@ -831,7 +833,7 @@ export default function Home() {
                   <path d="m9 12 2 2 4-4" />
                 </svg>
               ),
-              iconBg: "rgba(16, 185, 129, 0.1)",
+              iconBg: "rgba(16, 185, 129, 0.15)",
               iconColor: "#10B981",
               skills: ["Performance Profiling", "Memory Optimisation", "Unit Testing", "Crash Analytics", "TestFairy", "Code Reviews", "Debugging"]
             }
@@ -844,7 +846,7 @@ export default function Home() {
                 border: '1px solid var(--card-border)',
                 borderRadius: 'var(--radius-lg)',
                 padding: 'var(--spacing-lg)',
-                boxShadow: '0 1px 3px rgba(0, 0, 0, 0.02)',
+                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.25)',
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '1rem',
@@ -880,7 +882,8 @@ export default function Home() {
                   fontSize: '0.75rem',
                   fontWeight: 600,
                   color: 'var(--muted)',
-                  backgroundColor: 'rgba(0, 0, 0, 0.04)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                  border: '1px solid var(--card-border)',
                   padding: '0.2rem 0.55rem',
                   borderRadius: '9999px',
                   whiteSpace: 'nowrap'
@@ -905,7 +908,7 @@ export default function Home() {
       <footer style={{
         padding: '2.5rem 0 2rem 0',
         borderTop: '1px solid var(--card-border)',
-        backgroundColor: '#FAFAFA'
+        backgroundColor: '#05040A'
       }}>
         <div className="container" style={{
           display: 'flex',

@@ -32,7 +32,7 @@ export function ProjectCard({
   websiteLink
 }: ProjectCardProps) {
   const linkStyle = {
-    color: 'var(--primary)',
+    color: '#C4B5FD',
     fontSize: '0.875rem',
     fontWeight: 600,
     textDecoration: 'none',
@@ -40,8 +40,8 @@ export function ProjectCard({
     alignItems: 'center',
     gap: '0.375rem',
     padding: '0.375rem 0.75rem',
-    backgroundColor: 'rgba(37, 99, 235, 0.08)',
-    border: '1px solid rgba(37, 99, 235, 0.2)',
+    backgroundColor: 'rgba(139, 92, 246, 0.12)',
+    border: '1px solid rgba(139, 92, 246, 0.28)',
     borderRadius: 'var(--radius-xl)',
     transition: 'all var(--transition-fast)'
   };
@@ -54,16 +54,18 @@ export function ProjectCard({
       border: '1px solid var(--card-border)',
       borderRadius: 'var(--radius-lg)',
       overflow: 'hidden',
-      transition: 'transform var(--transition-normal), border-color var(--transition-normal)',
+      transition: 'transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal)',
       height: '100%',
     }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(-4px)';
-      e.currentTarget.style.borderColor = 'var(--muted)';
+      e.currentTarget.style.borderColor = 'rgba(168, 85, 247, 0.55)';
+      e.currentTarget.style.boxShadow = '0 12px 30px rgba(139, 92, 246, 0.18)';
     }}
     onMouseLeave={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
       e.currentTarget.style.borderColor = 'var(--card-border)';
+      e.currentTarget.style.boxShadow = 'none';
     }}>
       <div style={{ padding: 'var(--spacing-lg)', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 'var(--spacing-md)' }}>
@@ -89,7 +91,8 @@ export function ProjectCard({
                 fontSize: '1.5rem', 
                 fontWeight: 'bold', 
                 marginTop: '0.25rem',
-                marginBottom: '0.5rem'
+                marginBottom: '0.5rem',
+                color: 'var(--foreground)'
               }}>
                 {title}
               </h3>
@@ -97,9 +100,10 @@ export function ProjectCard({
           </div>
           {impact && (
             <span style={{
-              backgroundColor: 'rgba(255, 255, 255, 0.1)',
-              color: 'var(--primary)',
-              padding: '0.25rem 0.5rem',
+              backgroundColor: 'rgba(139, 92, 246, 0.15)',
+              color: '#C4B5FD',
+              border: '1px solid rgba(139, 92, 246, 0.3)',
+              padding: '0.25rem 0.55rem',
               borderRadius: 'var(--radius-sm)',
               fontSize: '0.75rem',
               fontWeight: 600,
@@ -150,8 +154,8 @@ export function ProjectCard({
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={linkStyle}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = 'var(--primary-foreground)'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(37, 99, 235, 0.08)'; e.currentTarget.style.color = 'var(--primary)'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#FFFFFF'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(139, 92, 246, 0.12)'; e.currentTarget.style.color = '#C4B5FD'; }}
               >
                 View Project <span>→</span>
               </a>
@@ -162,8 +166,8 @@ export function ProjectCard({
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={linkStyle}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = 'var(--primary-foreground)'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(37, 99, 235, 0.08)'; e.currentTarget.style.color = 'var(--primary)'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#FFFFFF'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(139, 92, 246, 0.12)'; e.currentTarget.style.color = '#C4B5FD'; }}
               >
                 Play Store <span>→</span>
               </a>
@@ -174,8 +178,8 @@ export function ProjectCard({
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={linkStyle}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = 'var(--primary-foreground)'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(37, 99, 235, 0.08)'; e.currentTarget.style.color = 'var(--primary)'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#FFFFFF'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(139, 92, 246, 0.12)'; e.currentTarget.style.color = '#C4B5FD'; }}
               >
                 App Store <span>→</span>
               </a>
@@ -186,8 +190,8 @@ export function ProjectCard({
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={linkStyle}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = 'var(--primary-foreground)'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(37, 99, 235, 0.08)'; e.currentTarget.style.color = 'var(--primary)'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#FFFFFF'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(139, 92, 246, 0.12)'; e.currentTarget.style.color = '#C4B5FD'; }}
               >
                 Website <span>→</span>
               </a>

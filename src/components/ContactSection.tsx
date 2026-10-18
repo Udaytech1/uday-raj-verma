@@ -39,7 +39,7 @@ export function ContactSection() {
             left: 0,
             right: 0,
             height: '4px',
-            background: 'linear-gradient(90deg, #2563EB 0%, #0D9488 50%, #8B5CF6 100%)'
+            background: 'linear-gradient(90deg, #8B5CF6 0%, #EC4899 50%, #06B6D4 100%)'
           }} />
 
           {/* Availability Status Badge */}
@@ -49,7 +49,7 @@ export function ContactSection() {
             gap: '0.5rem',
             padding: '0.4rem 0.95rem',
             borderRadius: '9999px',
-            backgroundColor: 'rgba(16, 185, 129, 0.08)',
+            backgroundColor: 'rgba(16, 185, 129, 0.12)',
             border: '1px solid rgba(16, 185, 129, 0.25)',
             marginBottom: '1.25rem'
           }}>
@@ -57,7 +57,7 @@ export function ContactSection() {
             <span style={{
               fontSize: '0.8125rem',
               fontWeight: 600,
-              color: '#059669',
+              color: '#10B981',
               letterSpacing: '0.03em',
               textTransform: 'uppercase'
             }}>
@@ -78,7 +78,7 @@ export function ContactSection() {
           }}>
             Have a product in mind?<br />
             <span style={{
-              background: 'linear-gradient(135deg, #2563EB 0%, #0D9488 100%)',
+              background: 'linear-gradient(135deg, #A78BFA 0%, #F472B6 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent'
             }}>
@@ -109,8 +109,8 @@ export function ContactSection() {
                     width: '44px',
                     height: '44px',
                     borderRadius: '12px',
-                    backgroundColor: 'rgba(37, 99, 235, 0.1)',
-                    color: '#2563EB',
+                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                    color: '#A78BFA',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center'
@@ -125,8 +125,8 @@ export function ContactSection() {
                     fontWeight: 600,
                     padding: '0.2rem 0.6rem',
                     borderRadius: '9999px',
-                    backgroundColor: 'rgba(37, 99, 235, 0.08)',
-                    color: '#2563EB'
+                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                    color: '#C4B5FD'
                   }}>
                     Primary Contact
                   </span>
@@ -159,12 +159,12 @@ export function ContactSection() {
                     gap: '0.45rem',
                     padding: '0.65rem 0.85rem',
                     borderRadius: 'var(--radius-md)',
-                    backgroundColor: '#2563EB',
+                    backgroundColor: 'var(--primary)',
                     color: '#FFFFFF',
                     fontWeight: 600,
                     fontSize: '0.875rem',
                     textDecoration: 'none',
-                    boxShadow: '0 2px 8px rgba(37, 99, 235, 0.25)',
+                    boxShadow: '0 4px 14px rgba(139, 92, 246, 0.35)',
                     transition: 'all var(--transition-fast)'
                   }}
                   className="hover-lift"
@@ -186,9 +186,9 @@ export function ContactSection() {
                     gap: '0.4rem',
                     padding: '0.65rem 0.75rem',
                     borderRadius: 'var(--radius-md)',
-                    backgroundColor: copiedEmail ? '#ECFDF5' : '#F4F4F5',
-                    color: copiedEmail ? '#059669' : 'var(--foreground)',
-                    border: copiedEmail ? '1px solid #A7F3D0' : '1px solid var(--card-border)',
+                    backgroundColor: copiedEmail ? 'rgba(16, 185, 129, 0.15)' : 'rgba(255, 255, 255, 0.05)',
+                    color: copiedEmail ? '#10B981' : 'var(--foreground)',
+                    border: copiedEmail ? '1px solid rgba(16, 185, 129, 0.35)' : '1px solid var(--card-border)',
                     fontWeight: 600,
                     fontSize: '0.85rem',
                     cursor: 'pointer',
@@ -305,8 +305,8 @@ export function ContactSection() {
                     width: '44px',
                     height: '44px',
                     borderRadius: '12px',
-                    backgroundColor: 'rgba(13, 148, 136, 0.12)',
-                    color: '#0D9488',
+                    backgroundColor: 'rgba(6, 182, 212, 0.15)',
+                    color: '#22D3EE',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center'
@@ -320,8 +320,8 @@ export function ContactSection() {
                     fontWeight: 600,
                     padding: '0.2rem 0.6rem',
                     borderRadius: '9999px',
-                    backgroundColor: 'rgba(13, 148, 136, 0.1)',
-                    color: '#0D9488'
+                    backgroundColor: 'rgba(6, 182, 212, 0.15)',
+                    color: '#22D3EE'
                   }}>
                     Voice Call
                   </span>
@@ -339,6 +339,7 @@ export function ContactSection() {
                   {PHONE_NUMBER}
                 </div>
                 <div style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>
+                  Mon – Fri · 9:00 AM – 7:00 PM IST
                 </div>
               </div>
 
@@ -352,12 +353,12 @@ export function ContactSection() {
                     gap: '0.45rem',
                     padding: '0.65rem 0.85rem',
                     borderRadius: 'var(--radius-md)',
-                    backgroundColor: '#0D9488',
+                    backgroundColor: '#0891B2',
                     color: '#FFFFFF',
                     fontWeight: 600,
                     fontSize: '0.875rem',
                     textDecoration: 'none',
-                    boxShadow: '0 2px 8px rgba(13, 148, 136, 0.25)',
+                    boxShadow: '0 4px 14px rgba(6, 182, 212, 0.35)',
                     transition: 'all var(--transition-fast)'
                   }}
                   className="hover-lift"
@@ -378,9 +379,9 @@ export function ContactSection() {
                     gap: '0.4rem',
                     padding: '0.65rem 0.75rem',
                     borderRadius: 'var(--radius-md)',
-                    backgroundColor: copiedPhone ? '#ECFDF5' : '#F4F4F5',
-                    color: copiedPhone ? '#059669' : 'var(--foreground)',
-                    border: copiedPhone ? '1px solid #A7F3D0' : '1px solid var(--card-border)',
+                    backgroundColor: copiedPhone ? 'rgba(16, 185, 129, 0.15)' : 'rgba(255, 255, 255, 0.05)',
+                    color: copiedPhone ? '#10B981' : 'var(--foreground)',
+                    border: copiedPhone ? '1px solid rgba(16, 185, 129, 0.35)' : '1px solid var(--card-border)',
                     fontWeight: 600,
                     fontSize: '0.85rem',
                     cursor: 'pointer',
@@ -397,7 +398,7 @@ export function ContactSection() {
                     </>
                   ) : (
                     <>
-                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                         <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
                         <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
                       </svg>
@@ -455,7 +456,7 @@ export function ContactSection() {
               download="Uday-Raj-Verma-CV.pdf"
               className="contact-social-pill"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
@@ -466,8 +467,8 @@ export function ContactSection() {
                 fontWeight: 700,
                 padding: '0.15rem 0.45rem',
                 borderRadius: '4px',
-                backgroundColor: 'rgba(37, 99, 235, 0.1)',
-                color: '#2563EB'
+                backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                color: '#C4B5FD'
               }}>
                 PDF
               </span>

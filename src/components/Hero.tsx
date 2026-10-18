@@ -18,7 +18,7 @@ export function Hero() {
         right: '-10%',
         width: '800px',
         height: '800px',
-        backgroundImage: 'linear-gradient(45deg, rgba(37, 99, 235, 0.15), rgba(13, 148, 136, 0.15), rgba(37, 99, 235, 0.15))',
+        backgroundImage: 'linear-gradient(45deg, rgba(139, 92, 246, 0.22), rgba(236, 72, 153, 0.16), rgba(99, 102, 241, 0.2))',
         backgroundSize: '200% 200%',
         filter: 'blur(120px)',
         borderRadius: '50%',
@@ -34,8 +34,8 @@ export function Hero() {
               gap: '0.5rem',
               padding: '0.375rem 0.875rem',
               borderRadius: '9999px',
-              backgroundColor: 'rgba(37, 99, 235, 0.08)',
-              border: '1px solid rgba(37, 99, 235, 0.2)',
+              backgroundColor: 'rgba(139, 92, 246, 0.12)',
+              border: '1px solid rgba(139, 92, 246, 0.3)',
               marginBottom: 'var(--spacing-md)'
             }}>
               <span style={{
@@ -49,7 +49,7 @@ export function Hero() {
               <span style={{
                 fontSize: '0.85rem',
                 fontWeight: 600,
-                color: 'var(--primary)',
+                color: '#C4B5FD',
                 letterSpacing: '0.04em',
                 textTransform: 'uppercase'
               }}>
@@ -76,10 +76,10 @@ export function Hero() {
               color: 'var(--foreground)'
             }}>
               Mobile App Developer <span style={{ 
-                background: 'linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%)',
+                background: 'linear-gradient(135deg, #A78BFA 0%, #F472B6 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent'
-              }}>(React Native + Android)</span>
+              }}>(React Native, Android)</span>
             </h1>
 
             <p style={{
@@ -103,7 +103,7 @@ export function Hero() {
                 fontWeight: 500,
                 padding: '0.25rem 0.65rem',
                 borderRadius: '6px',
-                backgroundColor: 'rgba(0, 0, 0, 0.04)',
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
                 border: '1px solid var(--card-border)',
                 color: 'var(--muted)'
               }}>
@@ -114,7 +114,7 @@ export function Hero() {
                 fontWeight: 500,
                 padding: '0.25rem 0.65rem',
                 borderRadius: '6px',
-                backgroundColor: 'rgba(0, 0, 0, 0.04)',
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
                 border: '1px solid var(--card-border)',
                 color: 'var(--muted)'
               }}>
@@ -125,7 +125,7 @@ export function Hero() {
                 fontWeight: 500,
                 padding: '0.25rem 0.65rem',
                 borderRadius: '6px',
-                backgroundColor: 'rgba(0, 0, 0, 0.04)',
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
                 border: '1px solid var(--card-border)',
                 color: 'var(--muted)'
               }}>
@@ -136,7 +136,7 @@ export function Hero() {
                 fontWeight: 500,
                 padding: '0.25rem 0.65rem',
                 borderRadius: '6px',
-                backgroundColor: 'rgba(0, 0, 0, 0.04)',
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
                 border: '1px solid var(--card-border)',
                 color: 'var(--muted)'
               }}>
@@ -217,7 +217,7 @@ export function Hero() {
               borderRadius: 'var(--radius-xl)',
               border: '1px solid var(--card-border)',
               padding: 'clamp(1.25rem, 3vw, 1.75rem)',
-              boxShadow: '0 20px 40px -15px rgba(0, 0, 0, 0.06)',
+              boxShadow: '0 20px 40px -15px rgba(0, 0, 0, 0.4), 0 0 25px rgba(139, 92, 246, 0.1)',
               position: 'relative',
               overflow: 'hidden'
             }}>
@@ -228,7 +228,7 @@ export function Hero() {
                 right: 0,
                 width: '180px',
                 height: '180px',
-                background: 'radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, rgba(13, 148, 136, 0.05) 50%, transparent 70%)',
+                background: 'radial-gradient(circle, rgba(139, 92, 246, 0.22) 0%, rgba(236, 72, 153, 0.08) 50%, transparent 70%)',
                 filter: 'blur(30px)',
                 pointerEvents: 'none'
               }} />
@@ -248,7 +248,7 @@ export function Hero() {
                     <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#F59E0B', display: 'inline-block' }} />
                     <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#10B981', display: 'inline-block' }} />
                   </div>
-                  <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--muted)', marginLeft: '0.25rem', letterSpacing: '0.05em' }}>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#C4B5FD', marginLeft: '0.25rem', letterSpacing: '0.05em' }}>
                     ENGINEER SNAPSHOT
                   </span>
                 </div>
@@ -259,7 +259,8 @@ export function Hero() {
                   fontSize: '0.72rem',
                   fontWeight: 600,
                   color: '#10B981',
-                  backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                  backgroundColor: 'rgba(16, 185, 129, 0.12)',
+                  border: '1px solid rgba(16, 185, 129, 0.25)',
                   padding: '0.2rem 0.5rem',
                   borderRadius: '9999px'
                 }}>
@@ -277,11 +278,11 @@ export function Hero() {
               }}>
                 <div style={{
                   padding: '0.85rem',
-                  backgroundColor: 'rgba(37, 99, 235, 0.04)',
+                  backgroundColor: 'rgba(139, 92, 246, 0.08)',
                   borderRadius: 'var(--radius-md)',
-                  border: '1px solid rgba(37, 99, 235, 0.12)'
+                  border: '1px solid rgba(139, 92, 246, 0.25)'
                 }}>
-                  <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--primary)', lineHeight: 1 }}>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#A78BFA', lineHeight: 1 }}>
                     500K+
                   </div>
                   <div style={{ fontSize: '0.72rem', color: 'var(--muted)', marginTop: '0.3rem', fontWeight: 500 }}>
@@ -291,11 +292,11 @@ export function Hero() {
 
                 <div style={{
                   padding: '0.85rem',
-                  backgroundColor: 'rgba(13, 148, 136, 0.04)',
+                  backgroundColor: 'rgba(236, 72, 153, 0.08)',
                   borderRadius: 'var(--radius-md)',
-                  border: '1px solid rgba(13, 148, 136, 0.15)'
+                  border: '1px solid rgba(236, 72, 153, 0.25)'
                 }}>
-                  <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--secondary)', lineHeight: 1 }}>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#F472B6', lineHeight: 1 }}>
                     5+ Yrs
                   </div>
                   <div style={{ fontSize: '0.72rem', color: 'var(--muted)', marginTop: '0.3rem', fontWeight: 500 }}>
@@ -305,7 +306,7 @@ export function Hero() {
 
                 <div style={{
                   padding: '0.85rem',
-                  backgroundColor: 'rgba(0, 0, 0, 0.02)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.03)',
                   borderRadius: 'var(--radius-md)',
                   border: '1px solid var(--card-border)'
                 }}>
@@ -319,7 +320,7 @@ export function Hero() {
 
                 <div style={{
                   padding: '0.85rem',
-                  backgroundColor: 'rgba(0, 0, 0, 0.02)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.03)',
                   borderRadius: 'var(--radius-md)',
                   border: '1px solid var(--card-border)'
                 }}>
@@ -334,7 +335,7 @@ export function Hero() {
 
               {/* Core Technologies Badges */}
               <div style={{ marginBottom: '1rem' }}>
-                <div style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.45rem' }}>
+                <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#C4B5FD', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.45rem' }}>
                   Core Specializations
                 </div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem' }}>
@@ -344,7 +345,7 @@ export function Hero() {
                       fontWeight: 500,
                       padding: '0.2rem 0.5rem',
                       borderRadius: '5px',
-                      backgroundColor: 'rgba(0, 0, 0, 0.04)',
+                      backgroundColor: 'rgba(255, 255, 255, 0.05)',
                       border: '1px solid var(--card-border)',
                       color: 'var(--foreground)'
                     }}>
@@ -360,7 +361,7 @@ export function Hero() {
                 alignItems: 'center',
                 justifyContent: 'space-between',
                 padding: '0.65rem 0.85rem',
-                backgroundColor: 'rgba(0, 0, 0, 0.02)',
+                backgroundColor: 'rgba(255, 255, 255, 0.03)',
                 borderRadius: 'var(--radius-md)',
                 border: '1px solid var(--card-border)',
                 fontSize: '0.75rem'
