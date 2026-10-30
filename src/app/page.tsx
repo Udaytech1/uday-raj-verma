@@ -118,6 +118,7 @@ export default function Home() {
 
       <Section 
         id="experience" 
+        theme="light"
         title={
           <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}>
             <span style={{
@@ -162,7 +163,7 @@ export default function Home() {
               {/* Header Info */}
               <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                  <div style={{
+                  <div className="experience-company-logo" style={{
                     width: '52px',
                     height: '52px',
                     borderRadius: '12px',
@@ -190,6 +191,7 @@ export default function Home() {
                         href={CODING_COMPANY_URL} 
                         target="_blank" 
                         rel="noopener noreferrer" 
+                        className="experience-company-link"
                         style={{ 
                           fontSize: '1rem', 
                           fontWeight: 600, 
@@ -227,7 +229,7 @@ export default function Home() {
                     <span className="pulse-dot" />
                     Current Role
                   </span>
-                  <span style={{
+                  <span className="experience-badge-fulltime" style={{
                     padding: '0.25rem 0.65rem',
                     backgroundColor: 'rgba(245, 158, 11, 0.15)',
                     border: '1px solid rgba(245, 158, 11, 0.3)',
@@ -280,7 +282,7 @@ export default function Home() {
                 gap: '0.75rem',
                 marginBottom: '1.25rem'
               }}>
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
+                <li className="experience-bullet" style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: 'var(--text-secondary, #D4D4D8)' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
@@ -302,7 +304,7 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
+                <li className="experience-bullet" style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: 'var(--text-secondary, #D4D4D8)' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
@@ -324,7 +326,7 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
+                <li className="experience-bullet" style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: 'var(--text-secondary, #D4D4D8)' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
@@ -346,7 +348,7 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
+                <li className="experience-bullet" style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: 'var(--text-secondary, #D4D4D8)' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
@@ -383,7 +385,7 @@ export default function Home() {
               {/* Header Info */}
               <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                  <div style={{
+                  <div className="experience-company-logo" style={{
                     width: '52px',
                     height: '52px',
                     borderRadius: '12px',
@@ -411,6 +413,7 @@ export default function Home() {
                         href={SKYVIEW_ADS_URL} 
                         target="_blank" 
                         rel="noopener noreferrer" 
+                        className="experience-company-link"
                         style={{ 
                           fontSize: '1rem', 
                           fontWeight: 600, 
@@ -433,7 +436,7 @@ export default function Home() {
 
                 {/* Pill Tags */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
-                  <span style={{
+                  <span className="experience-badge-secondary" style={{
                     padding: '0.25rem 0.65rem',
                     backgroundColor: 'rgba(255, 255, 255, 0.05)',
                     border: '1px solid var(--card-border)',
@@ -448,7 +451,7 @@ export default function Home() {
               </div>
 
               {/* Meta details */}
-              <div style={{
+              <div className="experience-meta" style={{
                 display: 'flex',
                 alignItems: 'center',
                 gap: '1.25rem',
@@ -486,7 +489,7 @@ export default function Home() {
                 gap: '0.75rem',
                 marginBottom: '1.25rem'
               }}>
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
+                <li className="experience-bullet" style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: 'var(--text-secondary, #D4D4D8)' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
@@ -508,7 +511,7 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
+                <li className="experience-bullet" style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: 'var(--text-secondary, #D4D4D8)' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
@@ -530,7 +533,7 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
+                <li className="experience-bullet" style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: 'var(--text-secondary, #D4D4D8)' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
@@ -567,7 +570,7 @@ export default function Home() {
           {/* Right Column: Recruiter & Hiring Team Snapshot */}
           <div className="recruiter-card">
             {/* Header */}
-            <div style={{
+            <div className="recruiter-badge" style={{
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.45rem',
@@ -589,10 +592,10 @@ export default function Home() {
               Recruiter & Hiring Brief
             </div>
 
-            <h3 style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--foreground)', letterSpacing: '-0.02em', lineHeight: 1.3 }}>
+            <h3 className="recruiter-card-title" style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--foreground)', letterSpacing: '-0.02em', lineHeight: 1.3 }}>
               Why Hire Uday?
             </h3>
-            <p style={{ fontSize: '0.9rem', color: 'var(--muted)', marginTop: '0.35rem', lineHeight: 1.5 }}>
+            <p className="recruiter-card-subtitle" style={{ fontSize: '0.9rem', color: 'var(--muted)', marginTop: '0.35rem', lineHeight: 1.5 }}>
               Senior Mobile Engineer with 5+ years building production applications that scale, retain users, and ship on schedule.
             </p>
 
@@ -604,28 +607,28 @@ export default function Home() {
               margin: '1.25rem 0'
             }}>
               <div className="recruiter-stat-box">
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#FBBF24', lineHeight: 1 }}>5+</div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>Years Mobile Dev</div>
+                <div className="recruiter-stat-box-val" style={{ fontSize: '1.5rem', fontWeight: 800, color: '#FBBF24', lineHeight: 1 }}>5+</div>
+                <div className="recruiter-stat-box-lbl" style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>Years Mobile Dev</div>
               </div>
 
               <div className="recruiter-stat-box">
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#FB923C', lineHeight: 1 }}>500K+</div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>Highest App Installs</div>
+                <div className="recruiter-stat-box-val" style={{ fontSize: '1.5rem', fontWeight: 800, color: '#FB923C', lineHeight: 1 }}>500K+</div>
+                <div className="recruiter-stat-box-lbl" style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>Highest App Installs</div>
               </div>
 
               <div className="recruiter-stat-box">
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#F59E0B', lineHeight: 1 }}>10+</div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>Production Apps</div>
+                <div className="recruiter-stat-box-val" style={{ fontSize: '1.5rem', fontWeight: 800, color: '#F59E0B', lineHeight: 1 }}>10+</div>
+                <div className="recruiter-stat-box-lbl" style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>Production Apps</div>
               </div>
 
               <div className="recruiter-stat-box">
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#FBBF24', lineHeight: 1 }}>Global</div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>UAE On-Site Delivery</div>
+                <div className="recruiter-stat-box-val" style={{ fontSize: '1.5rem', fontWeight: 800, color: '#FBBF24', lineHeight: 1 }}>Global</div>
+                <div className="recruiter-stat-box-lbl" style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>UAE On-Site Delivery</div>
               </div>
             </div>
 
             {/* Key Value Props for Hiring Teams */}
-            <div style={{
+            <div className="recruiter-value-props" style={{
               display: 'flex',
               flexDirection: 'column',
               gap: '0.7rem',
@@ -688,6 +691,7 @@ export default function Home() {
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
                 <a
                   href={`mailto:${EMAIL}`}
+                  className="recruiter-secondary-btn hover-lift"
                   style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -703,7 +707,6 @@ export default function Home() {
                     textDecoration: 'none',
                     transition: 'border-color var(--transition-fast)'
                   }}
-                  className="hover-lift"
                 >
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect width="20" height="16" x="2" y="4" rx="2"/>
@@ -716,6 +719,7 @@ export default function Home() {
                   href={LINKEDIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="recruiter-secondary-btn hover-lift"
                   style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -731,7 +735,6 @@ export default function Home() {
                     textDecoration: 'none',
                     transition: 'border-color var(--transition-fast)'
                   }}
-                  className="hover-lift"
                 >
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="#0A66C2">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
@@ -742,7 +745,7 @@ export default function Home() {
             </div>
 
             {/* Availability status */}
-            <div style={{
+            <div className="recruiter-availability" style={{
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -763,7 +766,31 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section id="projects" title="Featured Projects">
+      <Section 
+        id="projects" 
+        theme="light"
+        title={
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}>
+            <span style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: '42px',
+              height: '42px',
+              borderRadius: '12px',
+              backgroundColor: 'rgba(245, 158, 11, 0.15)',
+              color: 'var(--primary)'
+            }}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+                <line x1="12" y1="18" x2="12.01" y2="18" />
+              </svg>
+            </span>
+            Featured Projects
+          </span>
+        }
+        subtitle="High-impact commercial mobile applications built with React Native & Android — scaling to 500K+ downloads, hardware cutter IoT, and real-time AI."
+      >
         <div style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', 
@@ -777,6 +804,7 @@ export default function Home() {
 
       <Section 
         id="skills" 
+        theme="dark"
         title={
           <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}>
             <span style={{
@@ -931,7 +959,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <AboutSection />
+      <AboutSection theme="light" />
 
       <ContactSection />
       

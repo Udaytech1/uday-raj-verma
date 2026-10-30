@@ -1,8 +1,12 @@
 import { CV_URL } from '../constants';
 
-export function AboutSection() {
+interface AboutSectionProps {
+  theme?: 'dark' | 'light';
+}
+
+export function AboutSection({ theme = 'light' }: AboutSectionProps) {
   return (
-    <section id="about" className="section" style={{ position: 'relative' }}>
+    <section id="about" className={`section section-${theme}`} style={{ position: 'relative' }}>
       <div className="container">
         {/* Section Header */}
         <div style={{ marginBottom: 'var(--spacing-xl)' }}>
@@ -67,7 +71,7 @@ export function AboutSection() {
 
             {/* Quick Facts Card */}
             <div className="about-meta-card">
-              <div style={{
+              <div className="about-meta-title" style={{
                 fontSize: '0.8rem',
                 fontWeight: 700,
                 textTransform: 'uppercase',
@@ -108,7 +112,7 @@ export function AboutSection() {
 
             {/* Education Card */}
             <div className="about-meta-card">
-              <div style={{
+              <div className="about-meta-title education" style={{
                 fontSize: '0.8rem',
                 fontWeight: 700,
                 textTransform: 'uppercase',
@@ -127,7 +131,7 @@ export function AboutSection() {
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                <div style={{
+                <div className="about-education-item" style={{
                   padding: '0.65rem 0.75rem',
                   backgroundColor: 'rgba(255, 255, 255, 0.03)',
                   borderRadius: 'var(--radius-sm)',
@@ -141,7 +145,7 @@ export function AboutSection() {
                   </div>
                 </div>
 
-                <div style={{
+                <div className="about-education-item" style={{
                   padding: '0.65rem 0.75rem',
                   backgroundColor: 'rgba(255, 255, 255, 0.03)',
                   borderRadius: 'var(--radius-sm)',
@@ -175,7 +179,7 @@ export function AboutSection() {
                 Engineering robust mobile products from whiteboard to app stores
               </h3>
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', color: '#D4D4D8', fontSize: '1rem', lineHeight: 1.65 }}>
+              <div className="about-story-text" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', color: 'var(--text-secondary, #D4D4D8)', fontSize: '1rem', lineHeight: 1.65 }}>
                 <p>
                   I am a motivated Mobile App Developer with <strong>5+ years of hands-on experience</strong> working across the complete mobile software lifecycle. My passion is bridging elegant UI/UX design with scalable, resilient architectural foundations that withstand real-world user scale.
                 </p>
@@ -215,7 +219,7 @@ export function AboutSection() {
                 
                 {/* Pillar 1 */}
                 <div className="about-pillar-card">
-                  <div style={{
+                  <div className="about-pillar-icon" style={{
                     width: '38px',
                     height: '38px',
                     borderRadius: '10px',
@@ -233,10 +237,10 @@ export function AboutSection() {
                     </svg>
                   </div>
                   <div>
-                    <h5 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--foreground)', marginBottom: '0.2rem' }}>
+                    <h5 className="about-pillar-title" style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--foreground)', marginBottom: '0.2rem' }}>
                       Full-Lifecycle Ownership
                     </h5>
-                    <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.45 }}>
+                    <p className="about-pillar-desc" style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.45 }}>
                       From UI mockups and clean MVVM architecture to Play Store & App Store compliance, release pipelines, and post-launch monitoring.
                     </p>
                   </div>
@@ -244,7 +248,7 @@ export function AboutSection() {
 
                 {/* Pillar 2 */}
                 <div className="about-pillar-card">
-                  <div style={{
+                  <div className="about-pillar-icon" style={{
                     width: '38px',
                     height: '38px',
                     borderRadius: '10px',
@@ -260,10 +264,10 @@ export function AboutSection() {
                     </svg>
                   </div>
                   <div>
-                    <h5 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--foreground)', marginBottom: '0.2rem' }}>
+                    <h5 className="about-pillar-title" style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--foreground)', marginBottom: '0.2rem' }}>
                       High Scale & 60 FPS UX
                     </h5>
-                    <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.45 }}>
+                    <p className="about-pillar-desc" style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.45 }}>
                       Experienced serving 500K+ downloads with smooth re-renders, memory leak profiling, offline Room caching, and snappy animations.
                     </p>
                   </div>
@@ -271,7 +275,7 @@ export function AboutSection() {
 
                 {/* Pillar 3 */}
                 <div className="about-pillar-card">
-                  <div style={{
+                  <div className="about-pillar-icon" style={{
                     width: '38px',
                     height: '38px',
                     borderRadius: '10px',
@@ -289,10 +293,10 @@ export function AboutSection() {
                     </svg>
                   </div>
                   <div>
-                    <h5 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--foreground)', marginBottom: '0.2rem' }}>
+                    <h5 className="about-pillar-title" style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--foreground)', marginBottom: '0.2rem' }}>
                       Global Client Alignment
                     </h5>
-                    <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.45 }}>
+                    <p className="about-pillar-desc" style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.45 }}>
                       International on-site delivery in the UAE, communicating technical trade-offs clearly with founders, designers, and backend teams.
                     </p>
                   </div>
@@ -300,7 +304,7 @@ export function AboutSection() {
 
                 {/* Pillar 4 */}
                 <div className="about-pillar-card">
-                  <div style={{
+                  <div className="about-pillar-icon" style={{
                     width: '38px',
                     height: '38px',
                     borderRadius: '10px',
@@ -318,10 +322,10 @@ export function AboutSection() {
                     </svg>
                   </div>
                   <div>
-                    <h5 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--foreground)', marginBottom: '0.2rem' }}>
+                    <h5 className="about-pillar-title" style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--foreground)', marginBottom: '0.2rem' }}>
                       Dual-Stack Agility
                     </h5>
-                    <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.45 }}>
+                    <p className="about-pillar-desc" style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.45 }}>
                       Fluent in both cross-platform React Native (TypeScript) and native Android (Kotlin/Java) to pick the best tool for the product.
                     </p>
                   </div>
@@ -370,6 +374,7 @@ export function AboutSection() {
 
               <a
                 href="#contact"
+                className="about-secondary-btn hover-lift"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -384,7 +389,6 @@ export function AboutSection() {
                   textDecoration: 'none',
                   transition: 'border-color var(--transition-fast)'
                 }}
-                className="hover-lift"
               >
                 Get in Touch
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

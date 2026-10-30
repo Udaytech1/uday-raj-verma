@@ -28,6 +28,7 @@ export function TechBadge({
   return (
     <span
       className={`tech-badge ${className}`}
+      data-variant={variant}
       style={{
         display: 'inline-flex',
         alignItems: 'center',

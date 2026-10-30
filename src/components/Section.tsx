@@ -6,11 +6,20 @@ interface SectionProps extends Omit<React.HTMLAttributes<HTMLElement>, 'title'> 
   subtitle?: ReactNode;
   children: ReactNode;
   className?: string;
+  theme?: 'dark' | 'light';
 }
 
-export function Section({ id, title, subtitle, children, className = '', ...props }: SectionProps) {
+export function Section({ 
+  id, 
+  title, 
+  subtitle, 
+  children, 
+  className = '', 
+  theme = 'dark',
+  ...props 
+}: SectionProps) {
   return (
-    <section id={id} className={`section ${className}`} {...props}>
+    <section id={id} className={`section section-${theme} ${className}`} {...props}>
       <div className="container">
         {title && (
           <div style={{ marginBottom: subtitle ? 'var(--spacing-md)' : 'var(--spacing-xl)' }}>
@@ -21,7 +30,8 @@ export function Section({ id, title, subtitle, children, className = '', ...prop
               display: 'flex',
               alignItems: 'center',
               gap: '0.75rem',
-              flexWrap: 'wrap'
+              flexWrap: 'wrap',
+              color: 'var(--foreground)'
             }}>
               {title}
             </h2>

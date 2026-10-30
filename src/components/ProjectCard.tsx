@@ -31,42 +31,8 @@ export function ProjectCard({
   appStoreLink,
   websiteLink
 }: ProjectCardProps) {
-  const linkStyle = {
-    color: '#FBBF24',
-    fontSize: '0.875rem',
-    fontWeight: 600,
-    textDecoration: 'none',
-    display: 'inline-flex',
-    alignItems: 'center',
-    gap: '0.375rem',
-    padding: '0.375rem 0.75rem',
-    backgroundColor: 'rgba(245, 158, 11, 0.12)',
-    border: '1px solid rgba(245, 158, 11, 0.28)',
-    borderRadius: 'var(--radius-xl)',
-    transition: 'all var(--transition-fast)'
-  };
-
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      backgroundColor: 'var(--card-bg)',
-      border: '1px solid var(--card-border)',
-      borderRadius: 'var(--radius-lg)',
-      overflow: 'hidden',
-      transition: 'transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal)',
-      height: '100%',
-    }}
-    onMouseEnter={(e) => {
-      e.currentTarget.style.transform = 'translateY(-4px)';
-      e.currentTarget.style.borderColor = 'rgba(245, 158, 11, 0.5)';
-      e.currentTarget.style.boxShadow = '0 12px 30px rgba(245, 158, 11, 0.14)';
-    }}
-    onMouseLeave={(e) => {
-      e.currentTarget.style.transform = 'translateY(0)';
-      e.currentTarget.style.borderColor = 'var(--card-border)';
-      e.currentTarget.style.boxShadow = 'none';
-    }}>
+    <div className="project-card">
       <div style={{ padding: 'var(--spacing-lg)', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 'var(--spacing-md)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
@@ -74,11 +40,12 @@ export function ProjectCard({
               <img 
                 src={icon} 
                 alt={`${title} icon`} 
+                className="project-card-icon"
                 style={{ width: '48px', height: '48px', borderRadius: 'var(--radius-md)', objectFit: 'cover' }} 
               />
             )}
             <div>
-              <span style={{ 
+              <span className="project-card-category" style={{ 
                 color: 'var(--muted)', 
                 fontSize: '0.875rem', 
                 fontWeight: 500,
@@ -87,7 +54,7 @@ export function ProjectCard({
               }}>
                 {category}
               </span>
-              <h3 style={{ 
+              <h3 className="project-card-title" style={{ 
                 fontSize: '1.5rem', 
                 fontWeight: 'bold', 
                 marginTop: '0.25rem',
@@ -99,7 +66,7 @@ export function ProjectCard({
             </div>
           </div>
           {impact && (
-            <span style={{
+            <span className="project-card-impact" style={{
               backgroundColor: 'rgba(245, 158, 11, 0.14)',
               color: '#FBBF24',
               border: '1px solid rgba(245, 158, 11, 0.3)',
@@ -114,7 +81,7 @@ export function ProjectCard({
           )}
         </div>
         
-        <p style={{ 
+        <p className="project-card-description" style={{ 
           color: 'var(--muted)', 
           lineHeight: 1.6, 
           marginBottom: '0.85rem'
@@ -122,7 +89,7 @@ export function ProjectCard({
           {description}
         </p>
         
-        <div style={{ 
+        <div className="project-card-meta" style={{ 
           display: 'flex', 
           flexWrap: 'wrap', 
           alignItems: 'center', 
@@ -155,9 +122,7 @@ export function ProjectCard({
                 href={link} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                style={linkStyle}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#08080A'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(245, 158, 11, 0.12)'; e.currentTarget.style.color = '#FBBF24'; }}
+                className="project-card-link"
               >
                 View Project <span>→</span>
               </a>
@@ -167,9 +132,7 @@ export function ProjectCard({
                 href={playStoreLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                style={linkStyle}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#08080A'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(245, 158, 11, 0.12)'; e.currentTarget.style.color = '#FBBF24'; }}
+                className="project-card-link"
               >
                 Play Store <span>→</span>
               </a>
@@ -179,9 +142,7 @@ export function ProjectCard({
                 href={appStoreLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                style={linkStyle}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#08080A'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(245, 158, 11, 0.12)'; e.currentTarget.style.color = '#FBBF24'; }}
+                className="project-card-link"
               >
                 App Store <span>→</span>
               </a>
@@ -191,9 +152,7 @@ export function ProjectCard({
                 href={websiteLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                style={linkStyle}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#08080A'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(245, 158, 11, 0.12)'; e.currentTarget.style.color = '#FBBF24'; }}
+                className="project-card-link"
               >
                 Website <span>→</span>
               </a>
