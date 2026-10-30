@@ -198,7 +198,7 @@ export function Navbar() {
             justifyContent: 'space-between', 
             alignItems: 'center',
             paddingBottom: '0.5rem',
-            borderBottom: '1px solid rgba(139, 92, 246, 0.15)'
+            borderBottom: '1px solid rgba(245, 158, 11, 0.15)'
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
               <span style={{ fontWeight: 800, fontSize: '1.25rem', letterSpacing: '-0.02em', color: '#FFFFFF' }}>
@@ -207,9 +207,9 @@ export function Navbar() {
               <span style={{
                 fontSize: '0.7rem',
                 fontWeight: 600,
-                color: '#C4B5FD',
-                backgroundColor: 'rgba(139, 92, 246, 0.15)',
-                border: '1px solid rgba(139, 92, 246, 0.3)',
+                color: '#FBBF24',
+                backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                border: '1px solid rgba(245, 158, 11, 0.3)',
                 padding: '0.2rem 0.55rem',
                 borderRadius: '9999px',
                 letterSpacing: '0.02em'
@@ -280,7 +280,7 @@ export function Navbar() {
                   </div>
                   <div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                      <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#8B5CF6' }}>
+                      <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#F59E0B' }}>
                         {item.num}
                       </span>
                       <span style={{ fontWeight: 600, fontSize: '1rem', color: '#F8FAFC' }}>
@@ -291,9 +291,9 @@ export function Navbar() {
                           fontSize: '0.65rem',
                           padding: '0.12rem 0.45rem',
                           borderRadius: '9999px',
-                          background: 'rgba(139, 92, 246, 0.16)',
-                          color: '#C4B5FD',
-                          border: '1px solid rgba(139, 92, 246, 0.28)',
+                          background: 'rgba(245, 158, 11, 0.16)',
+                          color: '#FBBF24',
+                          border: '1px solid rgba(245, 158, 11, 0.28)',
                           fontWeight: 600
                         }}>
                           {item.badge}
@@ -327,11 +327,11 @@ export function Navbar() {
                 gap: '0.5rem',
                 padding: '0.85rem 1.25rem',
                 borderRadius: 'var(--radius-md)',
-                background: 'linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%)',
-                color: '#FFFFFF',
-                fontWeight: 600,
+                background: 'linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #EA580C 100%)',
+                color: '#08080A',
+                fontWeight: 700,
                 fontSize: '0.925rem',
-                boxShadow: '0 4px 20px rgba(139, 92, 246, 0.38)',
+                boxShadow: '0 4px 20px rgba(245, 158, 11, 0.35)',
                 textDecoration: 'none',
                 textAlign: 'center'
               }}
@@ -356,7 +356,7 @@ export function Navbar() {
                 padding: '0.75rem 1.25rem',
                 borderRadius: 'var(--radius-md)',
                 background: 'rgba(255, 255, 255, 0.04)',
-                border: '1px solid rgba(139, 92, 246, 0.35)',
+                border: '1px solid rgba(245, 158, 11, 0.35)',
                 color: '#E2E8F0',
                 fontWeight: 600,
                 fontSize: '0.875rem',
@@ -376,7 +376,7 @@ export function Navbar() {
           <div className="stagger-7" style={{ 
             marginTop: 'auto', 
             paddingTop: '1rem', 
-            borderTop: '1px solid rgba(139, 92, 246, 0.15)',
+            borderTop: '1px solid rgba(245, 158, 11, 0.15)',
             display: 'flex',
             flexDirection: 'column',
             gap: '0.75rem'
@@ -387,7 +387,7 @@ export function Navbar() {
               </span>
               <a 
                 href={`tel:${PHONE_NUMBER.replace(/\s+/g, '')}`} 
-                style={{ fontSize: '0.75rem', color: '#C4B5FD', fontWeight: 600, textDecoration: 'none' }}
+                style={{ fontSize: '0.75rem', color: '#FBBF24', fontWeight: 600, textDecoration: 'none' }}
               >
                 {PHONE_NUMBER}
               </a>

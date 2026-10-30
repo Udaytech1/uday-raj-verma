@@ -39,7 +39,7 @@ export function ContactSection() {
             left: 0,
             right: 0,
             height: '4px',
-            background: 'linear-gradient(90deg, #8B5CF6 0%, #EC4899 50%, #06B6D4 100%)'
+            background: 'linear-gradient(90deg, #F59E0B 0%, #EA580C 50%, #FBBF24 100%)'
           }} />
 
           {/* Availability Status Badge */}
@@ -78,7 +78,7 @@ export function ContactSection() {
           }}>
             Have a product in mind?<br />
             <span style={{
-              background: 'linear-gradient(135deg, #A78BFA 0%, #F472B6 100%)',
+              background: 'linear-gradient(135deg, #FDE68A 0%, #F59E0B 50%, #EA580C 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent'
             }}>
@@ -109,8 +109,8 @@ export function ContactSection() {
                     width: '44px',
                     height: '44px',
                     borderRadius: '12px',
-                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
-                    color: '#A78BFA',
+                    backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                    color: '#FBBF24',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center'
@@ -125,8 +125,8 @@ export function ContactSection() {
                     fontWeight: 600,
                     padding: '0.2rem 0.6rem',
                     borderRadius: '9999px',
-                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
-                    color: '#C4B5FD'
+                    backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                    color: '#FBBF24'
                   }}>
                     Primary Contact
                   </span>
@@ -159,12 +159,12 @@ export function ContactSection() {
                     gap: '0.45rem',
                     padding: '0.65rem 0.85rem',
                     borderRadius: 'var(--radius-md)',
-                    backgroundColor: 'var(--primary)',
-                    color: '#FFFFFF',
-                    fontWeight: 600,
+                    background: 'linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%)',
+                    color: '#08080A',
+                    fontWeight: 700,
                     fontSize: '0.875rem',
                     textDecoration: 'none',
-                    boxShadow: '0 4px 14px rgba(139, 92, 246, 0.35)',
+                    boxShadow: '0 4px 16px rgba(245, 158, 11, 0.35)',
                     transition: 'all var(--transition-fast)'
                   }}
                   className="hover-lift"
@@ -305,8 +305,8 @@ export function ContactSection() {
                     width: '44px',
                     height: '44px',
                     borderRadius: '12px',
-                    backgroundColor: 'rgba(6, 182, 212, 0.15)',
-                    color: '#22D3EE',
+                    backgroundColor: 'rgba(234, 88, 12, 0.15)',
+                    color: '#FB923C',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center'
@@ -320,8 +320,8 @@ export function ContactSection() {
                     fontWeight: 600,
                     padding: '0.2rem 0.6rem',
                     borderRadius: '9999px',
-                    backgroundColor: 'rgba(6, 182, 212, 0.15)',
-                    color: '#22D3EE'
+                    backgroundColor: 'rgba(234, 88, 12, 0.15)',
+                    color: '#FB923C'
                   }}>
                     Voice Call
                   </span>
@@ -352,12 +352,12 @@ export function ContactSection() {
                     gap: '0.45rem',
                     padding: '0.65rem 0.85rem',
                     borderRadius: 'var(--radius-md)',
-                    backgroundColor: '#0891B2',
+                    backgroundColor: '#C2410C',
                     color: '#FFFFFF',
                     fontWeight: 600,
                     fontSize: '0.875rem',
                     textDecoration: 'none',
-                    boxShadow: '0 4px 14px rgba(6, 182, 212, 0.35)',
+                    boxShadow: '0 4px 14px rgba(234, 88, 12, 0.35)',
                     transition: 'all var(--transition-fast)'
                   }}
                   className="hover-lift"
@@ -455,7 +455,7 @@ export function ContactSection() {
               download="Uday-Raj-Verma-CV.pdf"
               className="contact-social-pill"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FBBF24" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
@@ -466,8 +466,8 @@ export function ContactSection() {
                 fontWeight: 700,
                 padding: '0.15rem 0.45rem',
                 borderRadius: '4px',
-                backgroundColor: 'rgba(139, 92, 246, 0.15)',
-                color: '#C4B5FD'
+                backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                color: '#FBBF24'
               }}>
                 PDF
               </span>

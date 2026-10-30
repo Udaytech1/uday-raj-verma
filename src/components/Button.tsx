@@ -15,7 +15,7 @@ export function Button({ children, variant = 'primary', href, target, rel, class
     justifyContent: 'center',
     padding: '0.75rem 1.5rem',
     borderRadius: 'var(--radius-md)',
-    fontWeight: 500,
+    fontWeight: 600,
     fontSize: '1rem',
     transition: 'all var(--transition-fast)',
     cursor: 'pointer',
@@ -25,13 +25,15 @@ export function Button({ children, variant = 'primary', href, target, rel, class
 
   const variants = {
     primary: {
-      backgroundColor: 'var(--primary)',
-      color: 'var(--primary-foreground)',
+      background: 'linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%)',
+      color: '#08080A',
+      boxShadow: '0 4px 16px rgba(245, 158, 11, 0.3)',
+      fontWeight: 700,
     },
     secondary: {
-      backgroundColor: 'var(--secondary)',
-      color: 'var(--secondary-foreground)',
-      border: '1px solid var(--card-border)',
+      backgroundColor: 'rgba(255, 255, 255, 0.04)',
+      color: 'var(--foreground)',
+      border: '1px solid rgba(245, 158, 11, 0.3)',
     }
   };
 

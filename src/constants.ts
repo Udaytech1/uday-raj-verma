@@ -24,6 +24,10 @@ export const PROJECT_LINKS = {
       "https://play.google.com/store/apps/details?id=com.evryvision.app",
     appStore: "https://apps.apple.com/in/app/evryvision-app/id6778035550",
   },
+  zaggIsodCutter: {
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.zagg.isod.cut",
+  },
   seeYouGpt: {
     website: "https://www.seeyou.eu/",
   },
@@ -36,6 +40,10 @@ export const PROJECT_LINKS = {
   daempos: {
     playStore:
       "https://play.google.com/store/apps/details?id=com.tech.daempos.india",
+  },
+  femme: {
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.femmecustomer",
   },
   xperienceIt: {
     playStore:

@@ -32,7 +32,7 @@ export function ProjectCard({
   websiteLink
 }: ProjectCardProps) {
   const linkStyle = {
-    color: '#C4B5FD',
+    color: '#FBBF24',
     fontSize: '0.875rem',
     fontWeight: 600,
     textDecoration: 'none',
@@ -40,8 +40,8 @@ export function ProjectCard({
     alignItems: 'center',
     gap: '0.375rem',
     padding: '0.375rem 0.75rem',
-    backgroundColor: 'rgba(139, 92, 246, 0.12)',
-    border: '1px solid rgba(139, 92, 246, 0.28)',
+    backgroundColor: 'rgba(245, 158, 11, 0.12)',
+    border: '1px solid rgba(245, 158, 11, 0.28)',
     borderRadius: 'var(--radius-xl)',
     transition: 'all var(--transition-fast)'
   };
@@ -59,8 +59,8 @@ export function ProjectCard({
     }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(-4px)';
-      e.currentTarget.style.borderColor = 'rgba(168, 85, 247, 0.55)';
-      e.currentTarget.style.boxShadow = '0 12px 30px rgba(139, 92, 246, 0.18)';
+      e.currentTarget.style.borderColor = 'rgba(245, 158, 11, 0.5)';
+      e.currentTarget.style.boxShadow = '0 12px 30px rgba(245, 158, 11, 0.14)';
     }}
     onMouseLeave={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
@@ -100,9 +100,9 @@ export function ProjectCard({
           </div>
           {impact && (
             <span style={{
-              backgroundColor: 'rgba(139, 92, 246, 0.15)',
-              color: '#C4B5FD',
-              border: '1px solid rgba(139, 92, 246, 0.3)',
+              backgroundColor: 'rgba(245, 158, 11, 0.14)',
+              color: '#FBBF24',
+              border: '1px solid rgba(245, 158, 11, 0.3)',
               padding: '0.25rem 0.55rem',
               borderRadius: 'var(--radius-sm)',
               fontSize: '0.75rem',
@@ -117,45 +117,47 @@ export function ProjectCard({
         <p style={{ 
           color: 'var(--muted)', 
           lineHeight: 1.6, 
-          marginBottom: 'var(--spacing-md)',
-          flexGrow: 1 
+          marginBottom: '0.85rem'
         }}>
           {description}
         </p>
         
-        <div style={{ marginBottom: 'var(--spacing-md)' }}>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.5rem' }}>
-            <span style={{ fontSize: '0.875rem', color: 'var(--muted)' }}>Role: <strong style={{color: 'var(--foreground)'}}>{role}</strong></span>
-          </div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <span style={{ fontSize: '0.875rem', color: 'var(--muted)' }}>Platform: <strong style={{color: 'var(--foreground)'}}>{platform}</strong></span>
-          </div>
+        <div style={{ 
+          display: 'flex', 
+          flexWrap: 'wrap', 
+          alignItems: 'center', 
+          gap: '0.5rem 0.75rem', 
+          fontSize: '0.8125rem', 
+          color: 'var(--muted)',
+          marginBottom: 'var(--spacing-md)'
+        }}>
+          <span>Role: <strong style={{color: 'var(--foreground)'}}>{role}</strong></span>
+          <span style={{ opacity: 0.35 }}>•</span>
+          <span>Platform: <strong style={{color: 'var(--foreground)'}}>{platform}</strong></span>
         </div>
 
         <div style={{ 
           display: 'flex', 
-          flexWrap: 'wrap', 
-          gap: '0.5rem', 
+          flexDirection: 'column', 
+          gap: '0.75rem', 
           marginTop: 'auto',
           paddingTop: 'var(--spacing-md)',
-          borderTop: '1px solid var(--card-border)',
-          alignItems: 'center',
-          justifyContent: 'space-between'
+          borderTop: '1px solid var(--card-border)'
         }}>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.45rem' }}>
             {technologies.map(tech => (
-              <TechBadge key={tech} tech={tech} />
+              <TechBadge key={tech} tech={tech} size="sm" />
             ))}
           </div>
-          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '0.625rem', flexWrap: 'wrap', marginTop: '0.15rem' }}>
             {link && (
               <a 
                 href={link} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={linkStyle}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#FFFFFF'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(139, 92, 246, 0.12)'; e.currentTarget.style.color = '#C4B5FD'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#08080A'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(245, 158, 11, 0.12)'; e.currentTarget.style.color = '#FBBF24'; }}
               >
                 View Project <span>→</span>
               </a>
@@ -166,8 +168,8 @@ export function ProjectCard({
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={linkStyle}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#FFFFFF'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(139, 92, 246, 0.12)'; e.currentTarget.style.color = '#C4B5FD'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#08080A'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(245, 158, 11, 0.12)'; e.currentTarget.style.color = '#FBBF24'; }}
               >
                 Play Store <span>→</span>
               </a>
@@ -178,8 +180,8 @@ export function ProjectCard({
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={linkStyle}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#FFFFFF'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(139, 92, 246, 0.12)'; e.currentTarget.style.color = '#C4B5FD'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#08080A'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(245, 158, 11, 0.12)'; e.currentTarget.style.color = '#FBBF24'; }}
               >
                 App Store <span>→</span>
               </a>
@@ -190,8 +192,8 @@ export function ProjectCard({
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={linkStyle}
-                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#FFFFFF'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(139, 92, 246, 0.12)'; e.currentTarget.style.color = '#C4B5FD'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--primary)'; e.currentTarget.style.color = '#08080A'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(245, 158, 11, 0.12)'; e.currentTarget.style.color = '#FBBF24'; }}
               >
                 Website <span>→</span>
               </a>

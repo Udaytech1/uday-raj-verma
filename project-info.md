@@ -245,7 +245,22 @@ This project demonstrates the ability to quickly learn and apply Unity and VR de
 
 ---
 
-## 6.3 SEEYOU GPT
+## 6.3 ZAGG ISOD Cutter
+
+**Category:** Cutter Machine Integration  
+**Role:** Android Developer  
+**Technology:** Android / Hardware Integration / REST APIs  
+**Platforms:** Android  
+**Impact:** 10K+ Installs  
+**Link:** https://play.google.com/store/apps/details?id=com.zagg.isod.cut
+
+### Description
+
+Developed an Android application integrated with ISOD cutter machines, enabling retail store owners and staff to cut custom-fit screen protectors for smartphones and other devices. Integrated mobile app functionality with cutting hardware to streamline device selection and cutting operations. Published on Google Play Store with 10K+ installs.
+
+---
+
+## 6.4 SEEYOU GPT
 
 **Category:** AI Platform  
 **Role:** Developer / Independent Development  
@@ -335,7 +350,20 @@ This project demonstrates ownership of a business-critical retail workflow and c
 
 ---
 
-## 6.6 XperienceIT — Book Your Events
+## 6.6 Femme — Salon & Spa Booking
+
+**Category:** Salon & Spa Booking  
+**Role:** Mobile App Developer  
+**Platform:** Android  
+**Link:** https://play.google.com/store/apps/details?id=com.femmecustomer
+
+### Description
+
+A customer-facing beauty and wellness booking application to discover local salons and spas, view real-time stylist availability, and schedule instant-confirmation appointments.
+
+---
+
+## 6.7 XperienceIT — Book Your Events
 
 **Category:** Event Booking Application  
 **Role:** Mobile App Developer  
@@ -505,13 +533,14 @@ Each project card should include:
 ### Recommended featured-project order
 
 1. Kurd Shopping — 5 Lakh+ Downloads
-2. Mate Dating App — 10K+ Downloads
-3. EvryVision — VR / 360°
+2. EvryVision — VR / 360°
+3. ZAGG ISOD Cutter — Cutter Machine Integration (10K+ Installs)
 4. SEEYOU GPT — AI Platform
 5. FindQo App — Property Platform
 6. Daem POS — Retail POS
-7. XperienceIT — Event Booking
-8. FindQo Web App — Web Development
+7. Mate Dating App — 10K+ Downloads
+8. XperienceIT — Event Booking
+9. FindQo Web App — Web Development
 
 This order is a content/layout recommendation for portfolio presentation, not a ranking of project quality.
 

@@ -1,4 +1,4 @@
-import { CV_URL, EMAIL } from '../constants';
+import { CV_URL } from '../constants';
 
 export function AboutSection() {
   return (
@@ -22,7 +22,7 @@ export function AboutSection() {
               width: '42px',
               height: '42px',
               borderRadius: '12px',
-              backgroundColor: 'rgba(139, 92, 246, 0.15)',
+              backgroundColor: 'rgba(245, 158, 11, 0.15)',
               color: 'var(--primary)'
             }}>
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -72,7 +72,7 @@ export function AboutSection() {
                 fontWeight: 700,
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em',
-                color: '#C4B5FD',
+                color: '#FBBF24',
                 marginBottom: '0.85rem',
                 display: 'flex',
                 alignItems: 'center',
@@ -113,7 +113,7 @@ export function AboutSection() {
                 fontWeight: 700,
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em',
-                color: '#F472B6',
+                color: '#FB923C',
                 marginBottom: '0.85rem',
                 display: 'flex',
                 alignItems: 'center',
@@ -175,7 +175,7 @@ export function AboutSection() {
                 Engineering robust mobile products from whiteboard to app stores
               </h3>
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', color: '#CBD5E1', fontSize: '1rem', lineHeight: 1.65 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', color: '#D4D4D8', fontSize: '1rem', lineHeight: 1.65 }}>
                 <p>
                   I am a motivated Mobile App Developer with <strong>5+ years of hands-on experience</strong> working across the complete mobile software lifecycle. My passion is bridging elegant UI/UX design with scalable, resilient architectural foundations that withstand real-world user scale.
                 </p>
@@ -219,8 +219,8 @@ export function AboutSection() {
                     width: '38px',
                     height: '38px',
                     borderRadius: '10px',
-                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
-                    color: '#A78BFA',
+                    backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                    color: '#FBBF24',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -248,8 +248,8 @@ export function AboutSection() {
                     width: '38px',
                     height: '38px',
                     borderRadius: '10px',
-                    backgroundColor: 'rgba(236, 72, 153, 0.15)',
-                    color: '#F472B6',
+                    backgroundColor: 'rgba(234, 88, 12, 0.15)',
+                    color: '#FB923C',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -275,8 +275,8 @@ export function AboutSection() {
                     width: '38px',
                     height: '38px',
                     borderRadius: '10px',
-                    backgroundColor: 'rgba(6, 182, 212, 0.15)',
-                    color: '#22D3EE',
+                    backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                    color: '#F59E0B',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -349,13 +349,13 @@ export function AboutSection() {
                   alignItems: 'center',
                   gap: '0.5rem',
                   padding: '0.7rem 1.25rem',
-                  backgroundColor: 'var(--primary)',
-                  color: '#FFFFFF',
+                  background: 'linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%)',
+                  color: '#08080A',
                   borderRadius: 'var(--radius-md)',
-                  fontWeight: 600,
+                  fontWeight: 700,
                   fontSize: '0.9rem',
                   textDecoration: 'none',
-                  boxShadow: '0 4px 14px rgba(139, 92, 246, 0.35)',
+                  boxShadow: '0 4px 16px rgba(245, 158, 11, 0.35)',
                   transition: 'transform var(--transition-fast)'
                 }}
                 className="hover-lift"
@@ -375,9 +375,9 @@ export function AboutSection() {
                   alignItems: 'center',
                   gap: '0.5rem',
                   padding: '0.7rem 1.25rem',
-                  backgroundColor: '#181333',
+                  backgroundColor: '#18161E',
                   color: 'var(--foreground)',
-                  border: '1px solid rgba(139, 92, 246, 0.3)',
+                  border: '1px solid rgba(245, 158, 11, 0.3)',
                   borderRadius: 'var(--radius-md)',
                   fontWeight: 600,
                   fontSize: '0.9rem',

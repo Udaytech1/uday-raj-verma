@@ -2,10 +2,9 @@ import { Hero } from '../components/Hero';
 import { Section } from '../components/Section';
 import { ProjectCard } from '../components/ProjectCard';
 import { TechBadge } from '../components/TechBadge';
-import { Button } from '../components/Button';
 import { AboutSection } from '../components/AboutSection';
 import { ContactSection } from '../components/ContactSection';
-import { EMAIL, LINKEDIN_URL, GITHUB_URL, PROJECT_LINKS, PHONE_NUMBER, WHATSAPP_URL, CODING_COMPANY_URL, SKYVIEW_ADS_URL, CV_URL } from '../constants';
+import { EMAIL, LINKEDIN_URL, PROJECT_LINKS, CODING_COMPANY_URL, SKYVIEW_ADS_URL, CV_URL } from '../constants';
 
 import { Navbar } from '../components/Navbar';
 
@@ -14,7 +13,7 @@ export default function Home() {
     {
       title: "Kurd Shopping",
       category: "Online Classified Marketplace",
-      description: "A large-scale online classified marketplace serving users in Kurdistan and Iraq. Features include buying, selling, and discovering vehicles, properties, electronics, and furniture.",
+      description: "Large-scale classified marketplace serving Kurdistan and Iraq. Features seamless buying, selling, and discovery for vehicles, properties, electronics, and everyday items.",
       role: "App Developer",
       technologies: ["React Native", "REST APIs"],
       platform: "Android/ iOS",
@@ -26,7 +25,7 @@ export default function Home() {
     {
       title: "EvryVision",
       category: "VR & 360° Video Player",
-      description: "A VR and 360° video player designed to deliver immersive virtual reality experiences on smartphones and Google Cardboard. Built as a white-label, multi-tenant platform.",
+      description: "Immersive VR and 360° video player delivering virtual reality experiences on mobile devices. Engineered as a white-label, multi-tenant platform with custom client branding.",
       role: "Solo Developer",
       technologies: ["Unity", "VR", "Android", "iOS"],
       platform: "Android / iOS",
@@ -36,9 +35,20 @@ export default function Home() {
       appStoreLink: PROJECT_LINKS.evryvision.appStore
     },
     {
+      title: "ZAGG ISOD Cutter",
+      category: "Cutter Machine Integration",
+      description: "Android application integrated with ISOD cutter machines to cut custom-fit screen protectors. Seamlessly connects mobile app controls with on-demand cutting hardware.",
+      role: "Android Developer",
+      technologies: ["Android", "Hardware Integration", "REST APIs"],
+      platform: "Android",
+      impact: "10K+ Installs",
+      icon: "/project/zagg-icon.webp",
+      playStoreLink: PROJECT_LINKS.zaggIsodCutter.playStore
+    },
+    {
       title: "SEEYOU GPT",
       category: "AI Platform",
-      description: "An AI-powered conversational platform similar to ChatGPT, built from scratch with real-time chat experience and GPT streaming.",
+      description: "An AI-powered conversational platform similar to ChatGPT, built from scratch featuring real-time conversational intelligence, GPT streaming, and responsive UI.",
       role: "Developer",
       technologies: ["React Native", "AI APIs", "WebSockets"],
       platform: "Mobile",
@@ -48,7 +58,7 @@ export default function Home() {
     {
       title: "FindQo App",
       category: "Property Sales & Rental",
-      description: "A dynamic property sales and rental platform with property discovery, listings, search, filtering, and authentication.",
+      description: "Dynamic property sales and rental mobile platform featuring real-time property discovery, verified listings, advanced search filters, and secure user authentication.",
       role: "Mobile App Developer",
       technologies: ["React Native", "REST APIs"],
       platform: "iOS / Android",
@@ -60,14 +70,34 @@ export default function Home() {
     {
       title: "Daem POS",
       category: "Retail POS Application",
-      description: "A point-of-sale application for retail shops with invoice generation and background syncing.",
+      description: "Point-of-sale Android application for retail businesses with invoice generation, offline Room database caching, and reliable background data synchronization.",
       role: "Developer",
       technologies: ["Android", "Room DB"],
       platform: "Android",
       icon: "/project/daempos-icon.webp",
       playStoreLink: PROJECT_LINKS.daempos.playStore
     },
-     {
+    {
+      title: "Femme",
+      category: "Salon & Spa Booking",
+      description: "Customer-facing beauty and wellness booking application to discover local salons and spas, view real-time stylist availability, and schedule instant appointments.",
+      role: "Mobile App Developer",
+      technologies: ["Android", "REST APIs"],
+      platform: "Android",
+      icon: "/project/femme-icon.webp",
+      playStoreLink: PROJECT_LINKS.femme.playStore
+    },
+    {
+      title: "XperienceIT",
+      category: "Event Booking Application",
+      description: "Bespoke event planning and booking application enabling users to curate, manage, and book tailored experiences, decorations, romantic celebrations, gifts, and venues.",
+      role: "Mobile App Developer",
+      technologies: ["Android", "REST APIs"],
+      platform: "Android",
+      icon: "/project/xperienceit-icon.webp",
+      playStoreLink: PROJECT_LINKS.xperienceIt.playStore
+    },
+    {
       title: "Mate Dating App",
       category: "Dating & Social Application",
       description: "A privacy-focused dating and social application designed to help people connect, meet, and build meaningful relationships. Built from scratch with a co-developer.",
@@ -97,7 +127,7 @@ export default function Home() {
               width: '42px',
               height: '42px',
               borderRadius: '12px',
-              backgroundColor: 'rgba(139, 92, 246, 0.15)',
+              backgroundColor: 'rgba(245, 158, 11, 0.15)',
               color: 'var(--primary)'
             }}>
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -124,7 +154,7 @@ export default function Home() {
                 left: '1.5rem',
                 right: '1.5rem',
                 height: '3px',
-                background: 'linear-gradient(90deg, #8B5CF6, #EC4899)',
+                background: 'linear-gradient(90deg, #F59E0B, #EA580C)',
                 borderTopLeftRadius: '2px',
                 borderTopRightRadius: '2px'
               }} />
@@ -137,8 +167,8 @@ export default function Home() {
                     height: '52px',
                     borderRadius: '12px',
                     padding: '4px',
-                    backgroundColor: '#1E183B',
-                    border: '1px solid rgba(139, 92, 246, 0.25)',
+                    backgroundColor: '#1A1822',
+                    border: '1px solid rgba(245, 158, 11, 0.25)',
                     boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
                     display: 'flex',
                     alignItems: 'center',
@@ -163,7 +193,7 @@ export default function Home() {
                         style={{ 
                           fontSize: '1rem', 
                           fontWeight: 600, 
-                          color: '#C4B5FD', 
+                          color: '#FBBF24', 
                           display: 'inline-flex', 
                           alignItems: 'center', 
                           gap: '0.25rem',
@@ -199,12 +229,12 @@ export default function Home() {
                   </span>
                   <span style={{
                     padding: '0.25rem 0.65rem',
-                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
-                    border: '1px solid rgba(139, 92, 246, 0.3)',
+                    backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                    border: '1px solid rgba(245, 158, 11, 0.3)',
                     borderRadius: '9999px',
                     fontSize: '0.75rem',
                     fontWeight: 600,
-                    color: '#C4B5FD'
+                    color: '#FBBF24'
                   }}>
                     Full-time
                   </span>
@@ -250,13 +280,13 @@ export default function Home() {
                 gap: '0.75rem',
                 marginBottom: '1.25rem'
               }}>
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
-                    color: '#A78BFA',
+                    backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                    color: '#FBBF24',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -272,13 +302,13 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(236, 72, 153, 0.15)',
-                    color: '#F472B6',
+                    backgroundColor: 'rgba(234, 88, 12, 0.15)',
+                    color: '#FB923C',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -294,13 +324,13 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(6, 182, 212, 0.15)',
-                    color: '#22D3EE',
+                    backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                    color: '#F59E0B',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -316,13 +346,13 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
-                    color: '#A78BFA',
+                    backgroundColor: 'rgba(234, 88, 12, 0.15)',
+                    color: '#FB923C',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -358,8 +388,8 @@ export default function Home() {
                     height: '52px',
                     borderRadius: '12px',
                     padding: '4px',
-                    backgroundColor: '#1E183B',
-                    border: '1px solid rgba(139, 92, 246, 0.25)',
+                    backgroundColor: '#1A1822',
+                    border: '1px solid rgba(245, 158, 11, 0.25)',
                     boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
                     display: 'flex',
                     alignItems: 'center',
@@ -384,7 +414,7 @@ export default function Home() {
                         style={{ 
                           fontSize: '1rem', 
                           fontWeight: 600, 
-                          color: '#C4B5FD', 
+                          color: '#FBBF24', 
                           display: 'inline-flex', 
                           alignItems: 'center', 
                           gap: '0.25rem',
@@ -456,13 +486,13 @@ export default function Home() {
                 gap: '0.75rem',
                 marginBottom: '1.25rem'
               }}>
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
-                    color: '#A78BFA',
+                    backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                    color: '#FBBF24',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -478,13 +508,13 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
-                    color: '#A78BFA',
+                    backgroundColor: 'rgba(234, 88, 12, 0.15)',
+                    color: '#FB923C',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -500,13 +530,13 @@ export default function Home() {
                   </span>
                 </li>
 
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#CBD5E1' }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.625rem', fontSize: '0.9375rem', lineHeight: 1.55, color: '#D4D4D8' }}>
                   <span style={{
                     width: '18px',
                     height: '18px',
                     borderRadius: '50%',
-                    backgroundColor: 'rgba(139, 92, 246, 0.15)',
-                    color: '#A78BFA',
+                    backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                    color: '#F59E0B',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -543,11 +573,11 @@ export default function Home() {
               gap: '0.45rem',
               padding: '0.3rem 0.75rem',
               borderRadius: '9999px',
-              backgroundColor: 'rgba(139, 92, 246, 0.12)',
-              border: '1px solid rgba(139, 92, 246, 0.3)',
+              backgroundColor: 'rgba(245, 158, 11, 0.12)',
+              border: '1px solid rgba(245, 158, 11, 0.3)',
               fontSize: '0.75rem',
               fontWeight: 600,
-              color: '#C4B5FD',
+              color: '#FBBF24',
               textTransform: 'uppercase',
               letterSpacing: '0.05em',
               marginBottom: '1rem'
@@ -574,22 +604,22 @@ export default function Home() {
               margin: '1.25rem 0'
             }}>
               <div className="recruiter-stat-box">
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#A78BFA', lineHeight: 1 }}>5+</div>
+                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#FBBF24', lineHeight: 1 }}>5+</div>
                 <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>Years Mobile Dev</div>
               </div>
 
               <div className="recruiter-stat-box">
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#F472B6', lineHeight: 1 }}>500K+</div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>Total App Installs</div>
+                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#FB923C', lineHeight: 1 }}>500K+</div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>Highest App Installs</div>
               </div>
 
               <div className="recruiter-stat-box">
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#C084FC', lineHeight: 1 }}>10+</div>
+                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#F59E0B', lineHeight: 1 }}>10+</div>
                 <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>Production Apps</div>
               </div>
 
               <div className="recruiter-stat-box">
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#22D3EE', lineHeight: 1 }}>Global</div>
+                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#FBBF24', lineHeight: 1 }}>Global</div>
                 <div style={{ fontSize: '0.75rem', color: 'var(--muted)', marginTop: '0.35rem', fontWeight: 500 }}>UAE On-Site Delivery</div>
               </div>
             </div>
@@ -636,13 +666,13 @@ export default function Home() {
                   justifyContent: 'center',
                   gap: '0.5rem',
                   padding: '0.75rem 1rem',
-                  backgroundColor: 'var(--primary)',
-                  color: '#FFFFFF',
+                  background: 'linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%)',
+                  color: '#08080A',
                   borderRadius: 'var(--radius-md)',
-                  fontWeight: 600,
+                  fontWeight: 700,
                   fontSize: '0.9375rem',
                   textDecoration: 'none',
-                  boxShadow: '0 4px 14px rgba(139, 92, 246, 0.35)',
+                  boxShadow: '0 4px 16px rgba(245, 158, 11, 0.35)',
                   transition: 'transform var(--transition-fast), box-shadow var(--transition-fast)'
                 }}
                 className="hover-lift"
@@ -664,8 +694,8 @@ export default function Home() {
                     justifyContent: 'center',
                     gap: '0.4rem',
                     padding: '0.625rem 0.75rem',
-                    backgroundColor: '#1A1535',
-                    border: '1px solid rgba(139, 92, 246, 0.25)',
+                    backgroundColor: '#18161E',
+                    border: '1px solid rgba(245, 158, 11, 0.25)',
                     borderRadius: 'var(--radius-md)',
                     color: 'var(--foreground)',
                     fontWeight: 500,
@@ -692,8 +722,8 @@ export default function Home() {
                     justifyContent: 'center',
                     gap: '0.4rem',
                     padding: '0.625rem 0.75rem',
-                    backgroundColor: '#1A1535',
-                    border: '1px solid rgba(139, 92, 246, 0.25)',
+                    backgroundColor: '#18161E',
+                    border: '1px solid rgba(245, 158, 11, 0.25)',
                     borderRadius: 'var(--radius-md)',
                     color: 'var(--foreground)',
                     fontWeight: 500,
@@ -756,7 +786,7 @@ export default function Home() {
               width: '42px',
               height: '42px',
               borderRadius: '12px',
-              backgroundColor: 'rgba(139, 92, 246, 0.15)',
+              backgroundColor: 'rgba(245, 158, 11, 0.15)',
               color: 'var(--primary)'
             }}>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -783,8 +813,8 @@ export default function Home() {
                   <path d="M12 18h.01" />
                 </svg>
               ),
-              iconBg: "rgba(139, 92, 246, 0.15)",
-              iconColor: "#A78BFA",
+              iconBg: "rgba(245, 158, 11, 0.15)",
+              iconColor: "#FBBF24",
               skills: ["React Native", "Android", "Kotlin", "Java", "TypeScript", "JavaScript", "Jetpack Compose", "Unity"]
             },
             {
@@ -796,8 +826,8 @@ export default function Home() {
                   <polyline points="2 12 12 17 22 12" />
                 </svg>
               ),
-              iconBg: "rgba(99, 102, 241, 0.15)",
-              iconColor: "#818CF8",
+              iconBg: "rgba(234, 88, 12, 0.15)",
+              iconColor: "#FB923C",
               skills: ["MVVM", "Room DB", "Hilt", "Coroutines & Flow", "WorkManager", "LiveData", "Navigation Component", "SQLite", "Data Binding"]
             },
             {
@@ -807,8 +837,8 @@ export default function Home() {
                   <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
                 </svg>
               ),
-              iconBg: "rgba(236, 72, 153, 0.15)",
-              iconColor: "#F472B6",
+              iconBg: "rgba(245, 158, 11, 0.15)",
+              iconColor: "#F59E0B",
               skills: ["Firebase Services", "AI & GPT Streaming", "REST APIs", "WebSockets", "Push Notifications (FCM)", "Redux Toolkit", "Video Calling", "Intercom", "Node.js"]
             },
             {
@@ -821,7 +851,7 @@ export default function Home() {
                   <path d="M18 3a3 3 0 0 0-3 3v.5L6 15.5l2.5 2.5L17.5 9H18a3 3 0 0 0 3-3V3h-3Z" />
                 </svg>
               ),
-              iconBg: "rgba(245, 158, 11, 0.15)",
+              iconBg: "rgba(251, 191, 36, 0.15)",
               iconColor: "#FBBF24",
               skills: ["Google Play Store", "Apple App Store", "Huawei AppGallery", "Android Studio", "Xcode", "Git", "GitHub", "Postman", "VS Code"]
             },
@@ -908,7 +938,7 @@ export default function Home() {
       <footer style={{
         padding: '2.5rem 0 2rem 0',
         borderTop: '1px solid var(--card-border)',
-        backgroundColor: '#05040A'
+        backgroundColor: '#050506'
       }}>
         <div className="container" style={{
           display: 'flex',

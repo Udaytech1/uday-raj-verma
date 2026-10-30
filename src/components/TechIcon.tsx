@@ -185,9 +185,9 @@ export function TechIcon({ name, size = 16, className = '', style = {} }: TechIc
     case 'aiconversationalproducts':
       return (
         <span style={iconStyle} className={className} title={name}>
-          <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-            <circle cx="12" cy="12" r="4" fill="#8B5CF6" fillOpacity="0.2" />
+            <circle cx="12" cy="12" r="4" fill="#F59E0B" fillOpacity="0.2" />
           </svg>
         </span>
       );
@@ -197,7 +197,7 @@ export function TechIcon({ name, size = 16, className = '', style = {} }: TechIc
     case 'videocallingwebrtc':
       return (
         <span style={iconStyle} className={className} title={name}>
-          <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#EC4899" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FB923C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <polygon points="23 7 16 12 23 17 23 7" />
             <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
           </svg>
@@ -218,6 +218,37 @@ export function TechIcon({ name, size = 16, className = '', style = {} }: TechIc
         <span style={iconStyle} className={className} title={name}>
           <svg width={size} height={size} viewBox="0 0 24 24" fill="#14B8A6">
             <path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.2L12 8.5l-2.5 1.3L12 11zm0 4.5l-8-4v6l8 4 8-4v-6l-8 4z" />
+          </svg>
+        </span>
+      );
+
+    case 'hardwareintegration':
+    case 'hardware':
+    case 'cutterhardware':
+    case 'iot':
+      return (
+        <span style={iconStyle} className={className} title={name}>
+          <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#38BDF8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <rect x="9" y="9" width="6" height="6" />
+            <line x1="9" y1="1" x2="9" y2="4" />
+            <line x1="15" y1="1" x2="15" y2="4" />
+            <line x1="9" y1="20" x2="9" y2="23" />
+            <line x1="15" y1="20" x2="15" y2="23" />
+            <line x1="20" y1="9" x2="23" y2="9" />
+            <line x1="20" y1="14" x2="23" y2="14" />
+            <line x1="1" y1="9" x2="4" y2="9" />
+            <line x1="1" y1="14" x2="4" y2="14" />
+          </svg>
+        </span>
+      );
+
+    case 'bluetooth':
+    case 'ble':
+      return (
+        <span style={iconStyle} className={className} title={name}>
+          <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5" />
           </svg>
         </span>
       );
@@ -424,7 +455,7 @@ export function TechIcon({ name, size = 16, className = '', style = {} }: TechIc
     case 'memoryoptimization':
       return (
         <span style={iconStyle} className={className} title={name}>
-          <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="#FBBF24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="4" y="4" width="16" height="16" rx="2" />
             <rect x="9" y="9" width="6" height="6" />
             <line x1="9" y1="1" x2="9" y2="4" />
